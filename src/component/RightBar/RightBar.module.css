@@ -1,0 +1,8 @@
+.rightbar{
+    width:20%;
+    padding:20px;
+    height:100vh;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: 1px solid black;
+}

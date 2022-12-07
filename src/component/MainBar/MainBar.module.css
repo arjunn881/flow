@@ -1,0 +1,19 @@
+.mainbar{
+    padding:20px;
+    width: 60%;
+    height: 100vh;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.qcon{
+    margin:20px auto;
+    padding:20px;
+    width:90%;
+    height: 200px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid black;
+
+}
