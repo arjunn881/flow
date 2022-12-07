@@ -1,0 +1,43 @@
+.header{
+    border-top: 1px solid black;
+    height:80px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo span{
+    font-weight: bolder;
+}
+.menu{
+    display: flex;
+    list-style-type:none;
+}
+.menu li{
+    margin-right:30px;
+    font-weight: bold;
+    text-decoration: inherit;
+    color:inherit;
+}
+.searchbar input{
+    border:none;
+    background-color: whitesmoke;
+    padding:10px 30px;
+    width:400px;
+}
+.searchbar{
+    position: relative;
+}
+.searchbar i{
+    position:absolute;
+    left:10px;
+    top:32%;
+}
+.admin span{
+    font-weight: bold;
+}
+
+@media screen and (max-width:769px) {
+    
+}
