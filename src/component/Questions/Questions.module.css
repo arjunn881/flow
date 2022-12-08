@@ -1,0 +1,34 @@
+.question{
+    display: flex;
+    justify-content: space-around;
+}
+.votes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.answers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    transition:0.3s;
+}
+.tagcon{
+    display: flex;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    padding:2px 3px;
+    
+}
+.tags p{
+    background-color: whitesmoke;
+}

@@ -2,13 +2,16 @@
     border-top: 1px solid black;
     height:80px;
     background-color: whitesmoke;
-    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow: inset 0 0 5px;
 }
 .logo span{
     font-weight: bolder;
+    text-decoration: none;
+    color:black;
+    
 }
 .menu{
     display: flex;
@@ -16,10 +19,11 @@
 }
 .menu li{
     margin-right:30px;
-    font-weight: bold;
-    text-decoration: inherit;
-    color:inherit;
+    color:black; 
+    font-size: 15px;
+    text-decoration: none;
 }
+
 .searchbar input{
     border:none;
     background-color: whitesmoke;

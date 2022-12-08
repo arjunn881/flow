@@ -6,11 +6,14 @@ export default function LeftBar() {
   return (
     <div className={style.leftbar}>
       <NavLink to='/'className={style.list} activeClassName={style.active}>
-        Home
+        <span>Home</span>
       </NavLink>
 
       <div className={style.public}>
-        <h4>Public</h4>
+        <h4>PUBLIC</h4>
+      <NavLink to='/Questions' className={style.list} activeClassName={style.active}>
+        <span>Questions</span>
+        </NavLink>
       <NavLink to='/'className={style.list} activeClassName={style.active}>
         Tag
       </NavLink>

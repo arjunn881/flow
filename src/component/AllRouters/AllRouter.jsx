@@ -1,10 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import About from '../../pages/About/About'
+import AskQuestion from '../../pages/AskQuestion/AskQuestion'
 import Auth from '../../pages/Auth/Auth'
 import ForTeams from '../../pages/ForTeams/ForTeams'
 import Home from '../../pages/Home/Home'
 import Products from '../../pages/Products/Products'
+import Questions from '../../pages/Questions/Questions'
 
 export default function AllRouter() {
   return (
@@ -14,6 +16,12 @@ export default function AllRouter() {
             <Route path='/About' element={<About/>} />
             <Route path='/Products' element={<Products/>} />
             <Route path='/ForTeams' element={<ForTeams/>} />
+            <Route path='/Questions' element={<Questions/>} />
+            <Route path='/AskQuestion' element={<AskQuestion/>} />
+
+
+
+
         </Routes>
   )
 }
