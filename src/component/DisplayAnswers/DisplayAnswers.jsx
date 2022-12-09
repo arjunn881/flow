@@ -9,14 +9,14 @@ export default function DisplayAnswers({ question }) {
         <div className={style.ansbody} key={ans._id}>
           <p>{ans.answerBody}</p>
 
-          <div className="">
+          <div className={style.quedetailscon}>
           <div className="">
           
             <button type="button">Share</button>
             <button type="button">Delete</button>
           </div>
           <div className={style.ansuser}>
-            <p>Answer {ans.answeredOn}</p>
+            <p>Answered {ans.answeredOn}</p>
             <Link to={`/User/${ans.userId}`} className={style.user}>
               <i class="fa-solid fa-user"></i>
               <div className="">{ans.userAnswered}</div>

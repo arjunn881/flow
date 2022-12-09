@@ -11,10 +11,16 @@
 }
 .ansbody{
     display: flex;
-    
+    justify-content: center;
     flex-direction: column;
 }
 .ansuser{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: column;
+}
+.quedetailscon{
     display: flex;
     align-items: center;
     justify-content: space-between;

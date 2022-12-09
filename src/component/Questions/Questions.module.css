@@ -31,4 +31,5 @@ a:-webkit-any-link{
 }
 .tags p{
     background-color: whitesmoke;
+    cursor: pointer;
 }

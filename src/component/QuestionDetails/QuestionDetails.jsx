@@ -128,9 +128,9 @@ export default function QuestionDetails() {
                   <h1>{question.questionTitle}</h1>
                   <div className={style.qdetailcon2}>
                     <div className={style.qvotes}>
-                      <i class="fa-solid fa-arrow-up"></i>
+                    <i class="fa-solid fa-caret-up"></i>
                       <p>{question.upVotes - question.downVotes}</p>
-                      <i class="fa-solid fa-arrow-down"></i>
+                      <i class="fa-solid fa-caret-down"></i>
                     </div>
                     <div className={style.quebody}>
                       <p>{question.questionBody}</p>
@@ -140,7 +140,11 @@ export default function QuestionDetails() {
                         ))}
                       </div>
 
-                      <div className="">
+
+                    </div>
+                    
+                  </div>
+                  <div className={style.quedetailscon}>
                         <div className="">
                           <button type="button">Share</button>
                           <button type="button">Delete</button>
@@ -154,8 +158,6 @@ export default function QuestionDetails() {
                          
                         </div>
                       </div>
-                    </div>
-                  </div>
                 </div>
                 {question.noOfAnswers !== 0 && (
                   <div className="">
@@ -177,8 +179,8 @@ export default function QuestionDetails() {
                     Browse other question tagged
                     {question.questionTags.map((tag) => (
                       <Link to="/Tags" key={tag} className={style.anstags}>
-                        {" "}
-                        {tag}{" "}
+                        
+                       <span>{" "}{tag}{" "}</span> 
                       </Link>
                     ))}{" "}
                     or {<Link to="/AskQuestion">ask your own question.</Link>}
