@@ -16,7 +16,7 @@
 }
 a:-webkit-any-link{
     text-decoration: none;
-    color:black;
+    color:#009df0;
     font-weight: 500;
     transition:0.3s;
 }

@@ -14,8 +14,8 @@ export default function LeftBar() {
       <NavLink to='/Questions' className={style.list} activeClassName={style.active}>
         <span>Questions</span>
         </NavLink>
-      <NavLink to='/'className={style.list} activeClassName={style.active}>
-        Tag
+      <NavLink to='/Tags'className={style.list} activeClassName={style.active}>
+        Tags
       </NavLink>
       
       <NavLink to='/'className={style.list} activeClassName={style.active}>

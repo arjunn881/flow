@@ -1,0 +1,21 @@
+.user{
+    display: flex;
+    align-items: center;
+
+}
+.user div{
+    margin-left: 10px;
+}
+.user i{
+    font-size: 15px;
+}
+.ansbody{
+    display: flex;
+    
+    flex-direction: column;
+}
+.ansuser{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,31 @@
+.qdetailcon2{
+   display: flex;
+}
+.qvotes{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+}
+.quebody{
+    
+}
+.tags{
+    display: flex;
+}
+.user{
+    display: flex;
+    align-items: center;
+
+}
+.user div{
+    margin-left: 10px;
+}
+.user i{
+    font-size: 15px;
+}
+.queuser{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

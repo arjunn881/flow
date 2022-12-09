@@ -1,7 +1,7 @@
 .mainbar{
     padding:20px;
     width:calc(100% - 20%);
-    height: 100vh;
+    
     background-color: whitesmoke;
 
     overflow: hidden;

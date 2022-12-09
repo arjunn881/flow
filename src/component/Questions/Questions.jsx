@@ -14,7 +14,7 @@ export default function Questions({ question }) {
         <p>Answers</p>
       </div>
       <div className={style.qtitle}>
-        <Link to={`/Questions/${question.id}`}>{question.questionTitle}</Link>
+        <Link to={`/Questions/${question._id}`}>{question.questionTitle}</Link>
         <div className={style.tagcon}>
           <div className={style.tags}>
             {question.questionTags.map((tag) => (
