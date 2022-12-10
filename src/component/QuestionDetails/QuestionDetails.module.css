@@ -1,88 +1,78 @@
-.qdetailcon2{
-   display: flex;
+.qdetailcon2 {
+  display: flex;
 }
-.qvotes{
-    display: flex;
-    align-items: center;
-    
-    flex-direction: column;
-}
-.quebody{
-    
-}
-.tags{
-    display: flex;
-}
-.user{
-    display: flex;
-    align-items: center;
+.qvotes {
+  display: flex;
+  align-items: center;
 
+  flex-direction: column;
 }
-.user div{
-    margin-left: 10px;
+.quebody {
 }
-.user i{
-    font-size: 15px;
+.tags {
+  display: flex;
 }
-.queuser{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+.user {
+  display: flex;
+  align-items: center;
 }
-.quedetailscon{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.user div {
+  margin-left: 10px;
 }
-.quedetails button{
-    padding:5px 30px;
-    background-color: black;
-    color:whitesmoke;
-    border: none;
-    border-radius:8px;
-    margin-right: 10px;
-    box-shadow: inset 0 0 5px;
-    font-weight: bold;
-    cursor: pointer;
+.user i {
+  font-size: 15px;
 }
-.postanscon textarea{
-    width:calc(100% - 40px);
-    border: none;
-    border-radius: 8px;
-    background-color: whitesmoke;
-    box-shadow: inset 0 0 5px;
-    padding:20px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-
-
-
+.queuser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.quedetailscon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quedetails button {
+  padding: 5px 30px;
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  box-shadow: inset 0 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.postanscon textarea {
+  width: calc(100% - 40px);
+  border: none;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  box-shadow: inset 0 0 5px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.postanscon input{
-    padding:5px 30px;
-    background-color: black;
-    color:whitesmoke;
-    border: none;
-    border-radius:8px;
-    
-    box-shadow: inset 0 0 5px;
-    font-weight: bold;
-    cursor: pointer;   
-    width:calc(100% ); 
+.postanscon input {
+  padding: 5px 30px;
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+
+  box-shadow: inset 0 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: calc(100%);
 }
-.tags p{
-    background-color:whitesmoke ;
-    cursor: pointer;
+.tags p {
+  background-color: whitesmoke;
+  cursor: pointer;
 }
-.anstags span{
-    background-color:whitesmoke ;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-left: 5px;
-
+.anstags span {
+  background-color: whitesmoke;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 5px;
 }
-
-
-
