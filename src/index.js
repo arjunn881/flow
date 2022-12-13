@@ -8,12 +8,12 @@ import { legacy_createStore as createStore, applyMiddleware, compose } from 'red
 import thunk from 'redux-thunk'
 import Reducers from './reducers';
 
-const store = createStore(Reducers, compose(applyMiddleware(thunk)))
+ const store = createStore(Reducers, compose(applyMiddleware(thunk)))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
-  <React.StrictMode>
+ <Provider store={store}>
+   <React.StrictMode>
     <App />
   </React.StrictMode>
   </Provider>

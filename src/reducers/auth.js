@@ -1,11 +1,12 @@
-const authReducer = (state = {}, actions) => {
-  switch (actions.type) {
-    case "AUTH":
-      return state
-      break;
+const authReducer = (state = {data : null}, action) => {
+  switch (action.type) {
+    case 'AUTH':
+      localStorage.setItem('Profile', JSON.stringify({...action?.data}))
+      return {...state, data: action?.data }
+      
 
     default:
-      break;
+      return state;
   }
 };
 
