@@ -128,7 +128,7 @@ export default function QuestionDetails() {
                   <h1>{question.questionTitle}</h1>
                   <div className={style.qdetailcon2}>
                     <div className={style.qvotes}>
-                    <i class="fa-solid fa-caret-up"></i>
+                      <i class="fa-solid fa-caret-up"></i>
                       <p>{question.upVotes - question.downVotes}</p>
                       <i class="fa-solid fa-caret-down"></i>
                     </div>
@@ -139,25 +139,24 @@ export default function QuestionDetails() {
                           <p key={tag}>{tag}</p>
                         ))}
                       </div>
-
-
                     </div>
-                    
                   </div>
                   <div className={style.quedetailscon}>
-                        <div className="">
-                          <button type="button">Share</button>
-                          <button type="button">Delete</button>
-                        </div>
-                        <div className={style.queuser}>
-                          <p>Asked {question.askedOn}</p>
-                          <Link to={`/User/${question.userId}`} className={style.user}>
-                            <i class="fa-solid fa-user"></i>
-                            <div className="">{question.userPosted}</div>
-                          </Link>
-                         
-                        </div>
-                      </div>
+                    <div className="">
+                      <button type="button">Share</button>
+                      <button type="button">Delete</button>
+                    </div>
+                    <div className={style.queuser}>
+                      <p>Asked {question.askedOn}</p>
+                      <Link
+                        to={`/User/${question.userId}`}
+                        className={style.user}
+                      >
+                        <i class="fa-solid fa-user"></i>
+                        <div className="">{question.userPosted}</div>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
                 {question.noOfAnswers !== 0 && (
                   <div className="">
@@ -179,8 +178,7 @@ export default function QuestionDetails() {
                     Browse other question tagged
                     {question.questionTags.map((tag) => (
                       <Link to="/Tags" key={tag} className={style.anstags}>
-                        
-                       <span>{" "}{tag}{" "}</span> 
+                        <span> {tag} </span>
                       </Link>
                     ))}{" "}
                     or {<Link to="/AskQuestion">ask your own question.</Link>}
