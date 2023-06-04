@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.use('/user', userRoutes)
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 const CONNECTION_URL =
   "mongodb+srv://arjunn:admin@thought.ywq5xzp.mongodb.net/?retryWrites=true&w=majority";
   
