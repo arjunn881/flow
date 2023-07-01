@@ -7,48 +7,71 @@ import { signup, login } from "../../actions/Auth";
 
 export default function Auth() {
   const [isSignup, setIsSignup] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
-
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleSwitch = () => {
     setIsSignup(!isSignup);
   };
 
-  const handleSubmit =(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if( ! email  && ! password){
-      alert("enter email & password ")
+    if (!email && !password) {
+      alert("enter email & password ");
     }
 
-    if(isSignup){
-      if(! name){
-        alert("enter name to continue")
+    if (isSignup) {
+      if (!name) {
+        alert("enter name to continue");
       }
-     dispatch(signup({ name, email, password }),navigate)
+      dispatch(signup({ name, email, password }), navigate);
     } else {
-      dispatch(login({email, password}),navigate)
+      dispatch(login({ email, password }), navigate);
     }
-    console.log({name,email,password})
-  }
+    console.log({ name, email, password });
+  };
   return (
     <div className={style.Auth}>
       <div className={style.authcon}>
-        {!isSignup && <div className={style.icon}><i class="fa-solid fa-right-to-bracket"></i></div>}
-        {isSignup && <div className={style.icon}><i class="fa-solid fa-user-plus"></i></div>}
+        {!isSignup && (
+          <div className={style.icon}>
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </div>
+        )}
+        {isSignup && (
+          <div className={style.icon}>
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+        )}
         <form onSubmit={handleSubmit}>
           {isSignup && (
             <label htmlFor="">
-              <input type="text" id="name" placeholder="Name" onChange={(e)=>{setName(e.target.value)}} />
+              <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
             </label>
-          )}<br/>
+          )}
+          <br />
 
           <label htmlFor="email">
-            <input type="email" placeholder="Email" name="email" id="email" onChange={(e)=>{setEmail(e.target.value)}} />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
           </label>
           <label htmlFor="password">
             <div className="">{!isSignup && <span>Forgot Password?</span>}</div>
@@ -56,7 +79,10 @@ export default function Auth() {
               type="password"
               placeholder="password"
               name="password"
-              id="password" onChange={(e)=>{setPassword(e.target.value)}}
+              id="password"
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
             />
             {isSignup && <p>Password must contain 8 characters</p>}
           </label>
