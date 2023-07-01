@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 export default function Header() {
-    const user = null
+    const user = JSON.parse(localStorage.getItem('Profile'));
   return (
     <div className={style.header}>
         <div className={style.logo}>
