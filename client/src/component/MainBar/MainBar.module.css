@@ -1,10 +1,11 @@
 .mainbar{
     padding:20px;
     width:calc(100% - 20%);
-    
+    height: auto;
     background-color: whitesmoke;
-
     overflow: hidden;
+    scroll-behavior: smooth;
+    scrollbar-arrow-color: azure;
 }
 
 .qcon{
