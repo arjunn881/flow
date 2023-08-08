@@ -1,16 +1,16 @@
 .header{
     border-top: 1px solid black;
     height:80px;
-    background-color: whitesmoke;
+    background-color: var(--color-bg);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: inset 0 0 5px;
+    
 }
 .logo span{
     font-weight: bolder;
     text-decoration: none;
-    color:black;
+    color:var(--color-font);
     
 }
 .menu{
@@ -19,14 +19,14 @@
 }
 .menu li{
     margin-right:30px;
-    color:black; 
+    color:var(--color-font); 
     font-size: 15px;
     text-decoration: none;
 }
 
 .searchbar input{
     border:none;
-    background-color: whitesmoke;
+    background-color: var(--color-bg);
     padding:10px 30px;
     width:400px;
 }
